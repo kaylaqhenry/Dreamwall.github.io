@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <! /* <meta charset="UTF-8"> */>
     <title>Selection</title>
     <link rel="stylesheet" href="input.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +9,51 @@
     Choose your desired "dream" words
 </h1>
 <body style ="background: aquamarine">
-<label for="dreamname">Enter dream word(4 to 8 characters):</label>
+<label for="myInput">Enter dream word(4 to 8 characters):</label>
 
-<input type="text" id="dreamname" name="name" required
-       minlength="4" maxlength="8" size="10" onfocus="this.value=''">
-<button id="myBtn" onclick="javascript:alert('Received!')">Button</button>
-
-<script>
-    var input = document.getElementById("myInput");
-    input.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            document.getElementById("myBtn").click();
-        }
-
-        <!-- Notes  -->
-    });
-</script>
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="/action_page.php">
     <div class="autocomplete" style="width:300px;">
-        <input id="myInput" type="text" name="myDreamword" placeholder="Dreamword">
+        <input id="myInput" type="text" name="myDreamword" placeholder="" onfocus="this.value=''">
+    <button id="myBtn" >Enter</button>
     </div>
-    <input type="submit">   <!-- Change to enter  -->
 </form>
+
+
 <script>
     autocomplete(document.getElementById("myInput"), dreamwords);
+
+        var input = document.getElementById("myInput");
+        input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+    }
+    });
+    var msg = document.getElementById("message");
+    var button = document.getElementById("button");
+    var textBox = document.getElementById("textbox");
+
+    // This event is fired when button is clicked
+    button.addEventListener("click", function () {
+        var str = textBox.value;
+        console.log(str);
+        msg.innerHTML += " <p>" + str + "</p> ";
+    });
+
+    textBox.addEventListener("keyup", function (event) {
+
+        // Checking if key pressed is ENTER or not
+        // if the key pressed is ENTER
+        // click listener on button is called
+        if (event.keyCode == 13) {
+            button.click();
+        }
+    });
+
+
+
 </script>
+
 </body>
 </html>
