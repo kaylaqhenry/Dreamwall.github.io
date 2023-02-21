@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <! /* <meta charset="UTF-8"> */>
     <title>Selection</title>
     <link rel="stylesheet" href="input.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <h1 style = "text-align: center">
     Choose your desired "dream" words
@@ -23,9 +24,18 @@
             document.getElementById("myBtn").click();
         }
 
-        <!-- populate entered  www.geeksforgeeks.org/how-to-trigger-html-button-after-hitting-enter-button-in-textbox-using-javascript/
-        autocomplete  /www.w3schools.com/howto/howto_js_autocomplete.asp  -->
+        <!-- Notes  -->
     });
+</script>
+<!--Make sure the form has the autocomplete function switched off:-->
+<form autocomplete="off" action="/action_page.php">
+    <div class="autocomplete" style="width:300px;">
+        <input id="myInput" type="text" name="myDreamword" placeholder="Dreamword">
+    </div>
+    <input type="submit">   <!-- Change to enter  -->
+</form>
+<script>
+    autocomplete(document.getElementById("myInput"), dreamwords);
 </script>
 </body>
 </html>
