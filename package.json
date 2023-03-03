@@ -1,0 +1,7 @@
+{
+  "name": "Dreamwall.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "google-search-results-nodejs": "^2.1.0"
+  }
+}
