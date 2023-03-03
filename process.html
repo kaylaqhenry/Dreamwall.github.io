@@ -14,11 +14,15 @@
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="/action_page.php">
     <div class="autocomplete" style="width:300px;">
-        <input id="myInput" type="text" name="myDreamword" placeholder="" onfocus="this.value=''">
+        <input id="myInput" type="text" name="myDreamword" placeholder="Place your mood, goal, idea here" onfocus="this.value=''">
     <button id="myBtn" >Enter</button>
     </div>
+
 </form>
 
+<script async src="https://cse.google.com/cse.js?cx=366f23b0e53f64096">
+</script>
+<div class="gcse-search"></div>
 
 <script>
     autocomplete(document.getElementById("myInput"), dreamwords);
@@ -54,6 +58,7 @@
 
 
 </script>
+
 
 </body>
 </html>
