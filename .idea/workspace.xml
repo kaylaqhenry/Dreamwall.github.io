@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="623d3307-cd71-45aa-83e1-dd3f171db9ef" name="Changes" comment="added SerpAPI in SearchAPI file">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_2023_3_21_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_2023_3_21_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/SearchApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/process.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +77,9 @@
       <workItem from="1677787810671" duration="8213000" />
       <workItem from="1677804409548" duration="598000" />
       <workItem from="1677805074291" duration="73000" />
+      <workItem from="1678723099507" duration="804000" />
+      <workItem from="1678821664543" duration="422000" />
+      <workItem from="1678894783581" duration="2582000" />
     </task>
     <task id="LOCAL-00001" summary="Added google search bar. need to be able to pull images from a selected picture">
       <created>1677802642276</created>
