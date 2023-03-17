@@ -29,14 +29,16 @@ Click your desired dream words:<br>
 
 
 <script>
-
+let list =["","", "", "", ""];
+var t =0;
     function show(){
         let items = document.forms[0].dreamword;
         let div1_html ="";
         for(let i = 0;i < items.length;i++){
             if(items[i].checked)
+                list[t]= items[i];
+            t++;
                 div1_html += items[i].value + "\n";
-
         }
         document.getElementById("div1").innerText = div1_html;
     }
