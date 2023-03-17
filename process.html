@@ -3,38 +3,26 @@
 <head>
     <title>Selection</title>
     <link rel="stylesheet" href="input.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 </head>
 <h1 style = "text-align: center">
     Choose your desired "dream" words
 </h1>
 <body style ="background: aquamarine">
-<form>
 Enter dream word(4 to 8 characters):<br>
 
-<input id="myInput" type="text" name="myDreamword" placeholder="" onfocus="this.value=''">
-<input id="Enter" type="Submit" name ="GrabInput" >
+<input id="myInput" type="text" placeholder="" onfocus="this.value=''">
+    <button type="button" name ="GrabInput" onclick="getInputValue()" > Submit </button>
 <script>
+    function getInputValue(){
+        var boxinput=document.getElementById("myInput").value;
+        alert(boxinput);
 
-
-
-    var msg = document.getElementById("message");
-    var button = document.getElementById("button");
-    var textBox = document.getElementById("textbox");
-
-    // This event is fired when button is clicked
-    button.addEventListener("click", function () {
-        var str = textBox.value;
-        console.log(str);
-        msg.innerHTML += " <p>" + str + "</p> ";
-    });
-
-
-
+    }
 
 
 
 </script>
-</form>
+
 </body>
 </html>
