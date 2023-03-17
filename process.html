@@ -13,16 +13,23 @@ Enter dream word(4 to 8 characters):<br>
 
 <input id="myInput" type="text" placeholder="" onfocus="this.value=''">
     <button type="button" name ="GrabInput" onclick="getInputValue()" > Submit </button>
-<script>
-    function getInputValue(){
-        var boxinput=document.getElementById("myInput").value;
-        alert(boxinput);
+<div id = "output"></div>
+<div2 id = "output2"> </div2>
+<div3 id = "output2"></div3>
+<div4 id = "output2"></div4>
 
+
+<script>
+    let list=[];
+    function getInputValue(){
+        document.getElementById("output").innerHTML = document.getElementById("myInput").value;
     }
 
 
 
+
 </script>
+
 
 </body>
 </html>
