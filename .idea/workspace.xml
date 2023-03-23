@@ -4,78 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a887cecc-0453-4951-a166-8944bf4d05b6" name="Changes" comment="Updated with checkboxes that show selected below and has a clear function" />
+    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/collage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Dreamwall.github.io" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2N9GVb9y4Fa9jC6Qh6BEti3tPNP" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2N9QMwS40yeMytUvUGaXnLrdsYI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/toinjemaxson/Documents/Dreamwall.github.io/sample_pics",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../Dreamwall.github.io/sample_pics" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$" />
+      <recent name="$PROJECT_DIR$/../../Dreamwall.github.io/love" />
+      <recent name="$PROJECT_DIR$/../../Dreamwall.github.io" />
+      <recent name="$PROJECT_DIR$/../../Dreamwall.github.io/sample_pics" />
+      <recent name="$PROJECT_DIR$/../.." />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Fixed form need to grab input using form">
-      <created>1679071778429</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679071778429</updated>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="" />
+      <created>1679073773609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679073773609</updated>
+      <workItem from="1679073774911" duration="29703000" />
     </task>
-    <task id="LOCAL-00002" summary="Fixed form need to grab input using form">
-      <created>1679077358667</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679077358667</updated>
-    </task>
-    <task id="LOCAL-00003" summary="grab input and displays it below but only one word">
-      <created>1679082819870</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679082819870</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated with checkboxes that show selected below and has a clear function">
-      <created>1679085664034</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679085664034</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated with checkboxes that show selected below and has a clear function">
-      <created>1679087585687</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679087585687</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed form need to grab input using form" />
-    <MESSAGE value="grab input and displays it below but only one word" />
-    <MESSAGE value="Updated with checkboxes that show selected below and has a clear function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated with checkboxes that show selected below and has a clear function" />
   </component>
 </project>
