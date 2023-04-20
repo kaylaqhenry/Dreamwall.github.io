@@ -29,9 +29,8 @@ Click your desired dream words:<br>
 
 
 <script>
-
-    let list =["","", "", "", ""];
-    var t =0;
+let list =["","", "", "", ""];
+var t =0;
     function show(){
         let items = document.forms[0].dreamword;
         let div1_html ="";
@@ -39,8 +38,7 @@ Click your desired dream words:<br>
             if(items[i].checked)
                 list[t]= items[i];
             t++;
-            div1_html += items[i].value + "\n";
-
+                div1_html += items[i].value + "\n";
         }
         document.getElementById("div1").innerText = div1_html;
     }
@@ -48,7 +46,11 @@ Click your desired dream words:<br>
         document.querySelectorAll('input[type="checkbox"]')
             .forEach(el => el.checked = false);
     }
+
     document.querySelector('button').addEventListener('click', uncheckAll)
+
 </script>
+
+
 </body>
 </html>
