@@ -84,3 +84,23 @@ function showImage(){
     document.getElementById("PlaceHolder_15").src = dreamWords[14];
     document.getElementById("PlaceHolder_16").src = dreamWords[15];
 }
+// list selector
+let list =["","", "", "", ""];
+var t =0;
+function show(){
+    let items = document.forms[0].dreamword;
+    let div1_html ="";
+    for(let i = 0;i < items.length;i++){
+        if(items[i].checked)
+            list[t]= items[i];
+        t++;
+        div1_html += items[i].value + "\n";
+    }
+    document.getElementById("div1").innerText = div1_html;
+}
+function uncheckAll() {
+    document.querySelectorAll('input[type="checkbox"]')
+        .forEach(el => el.checked = false);
+}
+
+document.querySelector('button').addEventListener('click', uncheckAll)

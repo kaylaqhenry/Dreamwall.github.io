@@ -3,12 +3,13 @@
 <head>
     <title>Selection</title>
     <link rel="stylesheet" href="input.css">
+    <script src="grid.js"></script>
     <meta charset="utf-8">
 </head>
 <h1 style = "text-align: center">
     Choose your desired "dream" words
 </h1>
-<body style ="background: #15b4b4">
+<body style ="background: #15b4b4" onload="show()">
 Click your desired dream words:<br>
 <form name = "form1">
     <input type = "checkbox" name = "dreamword" value ="Love "> Love <br>
@@ -29,31 +30,6 @@ Click your desired dream words:<br>
     Generate My Dream Wall!
 </button>
 <div id="div1"></div>
-
-
-<script>
-let list =["","", "", "", ""];
-var t =0;
-    function show(){
-        let items = document.forms[0].dreamword;
-        let div1_html ="";
-        for(let i = 0;i < items.length;i++){
-            if(items[i].checked)
-                list[t]= items[i];
-            t++;
-                div1_html += items[i].value + "\n";
-        }
-        document.getElementById("div1").innerText = div1_html;
-    }
-    function uncheckAll() {
-        document.querySelectorAll('input[type="checkbox"]')
-            .forEach(el => el.checked = false);
-    }
-
-    document.querySelector('button').addEventListener('click', uncheckAll)
-
-</script>
-
 
 </body>
 </html>
