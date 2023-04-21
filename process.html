@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 </head>
 <h1 style = "text-align: center">
-    Choose your desired "dream" words
+    Choose your desired "Dream" words
 </h1>
 <body style ="background: aquamarine">
 Click your desired dream words:<br>
@@ -22,33 +22,57 @@ Click your desired dream words:<br>
     <input type = "checkbox" name = "dreamword" value ="Business ">Business <br>
     <input type = "checkbox" name = "dreamword" value ="Self Care ">Self Care <br>
     <input type = "checkbox" name = "dreamword" value ="Adventure ">Adventure <br>
-    <input type="button" onclick="show()" value="click">
-    <input type="button" onclick="uncheckAll()" value="clear">
+    <input type="button" onclick="show()" value="Show List">
+    <input type="button" onclick="uncheckAll()" value="Clear">
+<!--    <input type="button" onclick="submit()" value="Create Your Dream Wall">-->
 </form>
 <div id="div1"></div>
+<button onclick="window.location.href='collage.html';">
+    Create Your Dream Wall
+</button>
 
 
 <script>
 let list =["","", "", "", ""];
 var t =0;
-    function show(){
-        let items = document.forms[0].dreamword;
-        let div1_html ="";
-        for(let i = 0;i < items.length;i++){
-            if(items[i].checked)
-                list[t]= items[i];
+    // function show(){
+    //     let items = document.forms[0].dreamword;
+    //     let div1_html ="";
+    //     for(let i = 0;i < items.length;i++){
+    //         if(items[i].checked)
+    //             list[t]= items[i];
+    //             t++;
+    //             div1_html += items[i].value + "\n";
+    //     }
+    //     document.getElementById("div1").innerText = div1_html;
+    // }
+
+function show(){
+    let str = "<ul>";
+    let item = document.forms[0].dreamword;
+    //let div1_html ="";
+    for(let i = 0;i < item.length;i++){
+        if(item[i].checked)
+            str += "<li>" + item[i].value + "</li>";
+            list[t]= item[i];
             t++;
-                div1_html += items[i].value + "\n";
-        }
-        document.getElementById("div1").innerText = div1_html;
     }
+    str += "</ul>";
+    document.getElementById("div1").innerHTML = str;
+}
+
     function uncheckAll() {
         document.querySelectorAll('input[type="checkbox"]')
             .forEach(el => el.checked = false);
-    }
+        document.getElementById('div1').innerHTML = ' ';
 
     document.querySelector('button').addEventListener('click', uncheckAll)
+        document.getElementById("div1").innerHTML = " ";
+    }
 
+    function submit() {
+
+    }
 </script>
 
 
