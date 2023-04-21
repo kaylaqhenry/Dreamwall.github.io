@@ -33,31 +33,29 @@ Click your desired dream words:<br>
 
 
 <script>
-let list =["","", "", "", ""];
-var t =0;
-    // function show(){
-    //     let items = document.forms[0].dreamword;
-    //     let div1_html ="";
-    //     for(let i = 0;i < items.length;i++){
-    //         if(items[i].checked)
-    //             list[t]= items[i];
-    //             t++;
-    //             div1_html += items[i].value + "\n";
-    //     }
-    //     document.getElementById("div1").innerText = div1_html;
-    // }
+    let DreamWords = [];
 
 function show(){
     let str = "<ul>";
+
     let item = document.forms[0].dreamword;
-    //let div1_html ="";
+
+
     for(let i = 0;i < item.length;i++){
-        if(item[i].checked)
+
+        if(item[i].checked) {
+            console.log(item[i].checked);
+            console.log(DreamWords.length)
+            DreamWords[i] = item[i].value;
             str += "<li>" + item[i].value + "</li>";
-            list[t]= item[i];
-            t++;
+
+        }
+
+
     }
     str += "</ul>";
+
+    console.log(DreamWords);
     document.getElementById("div1").innerHTML = str;
 }
 
@@ -70,9 +68,6 @@ function show(){
         document.getElementById("div1").innerHTML = " ";
     }
 
-    function submit() {
-
-    }
 </script>
 
 
