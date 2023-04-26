@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Selection</title>
+    <link rel="stylesheet" href="input.css">
+    <meta charset="utf-8">
 </head>
 <h1 style = "text-align: center">
-    Choose your desired "dream" words
+    Choose your desired "Dream" words
 </h1>
 <body style ="background: aquamarine">
+Click your desired dream words:<br>
+<form name = "form1">
+    <input type = "checkbox" name = "dreamword" value ="Love"> Love <br>
+    <input type = "checkbox" name = "dreamword" value ="Travel"> Travel<br>
+    <input type = "checkbox" name = "dreamword" value ="Friendship"> Friendship<br>
+    <input type = "checkbox" name = "dreamword" value ="Graduation">Graduation <br>
+    <input type = "checkbox" name = "dreamword" value ="Fitness">Fitness <br>
+    <input type = "checkbox" name = "dreamword" value ="Faith">Faith <br>
+    <input type = "checkbox" name = "dreamword" value ="House">House <br>
+    <input type = "checkbox" name = "dreamword" value ="Money">Money <br>
+    <input type = "checkbox" name = "dreamword" value ="Business">Business <br>
+    <input type = "checkbox" name = "dreamword" value ="Self Care">Self Care <br>
+    <input type = "checkbox" name = "dreamword" value ="Adventure">Adventure <br>
+    <input type="button" onclick="show()" value="click">
+    <input type="button" onclick="uncheckAll()" value="clear">
+</form>
+<div id="div1"></div>
+<button onclick="window.location.href='collage.html';">
+    Create Your Dream Wall
+</button>
+
+
+<script>
+    let DreamWords = [];
+
+function show(){
+    let str = "<ul>";
+
+    let item = document.forms[0].dreamword;
+
+
+    for(let i = 0;i < item.length;i++){
+
+        if(item[i].checked) {
+            console.log(item[i].checked);
+            console.log(DreamWords.length)
+            DreamWords[i] = item[i].value;
+            str += "<li>" + item[i].value + "</li>";
+
+        }
+
+
+    }
+    str += "</ul>";
+
+    console.log(DreamWords);
+    document.getElementById("div1").innerHTML = str;
+}
+
+    function uncheckAll() {
+        document.querySelectorAll('input[type="checkbox"]')
+            .forEach(el => el.checked = false);
+        document.getElementById('div1').innerHTML = ' ';
+
+    document.querySelector('button').addEventListener('click', uncheckAll)
+        document.getElementById("div1").innerHTML = " ";
+    }
+
+</script>
+
 
 </body>
 </html>
