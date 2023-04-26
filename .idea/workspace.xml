@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/grid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/process.html" afterDir="false" />
     </list>
@@ -39,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/toinjemaxson/Documents/Dreamwall.github.io/sample_pics",
+    "last_opened_file_path": "/Users/toinjemaxson/Dreamwall.github.io",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -47,6 +49,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,6 +82,9 @@
       <workItem from="1679542976957" duration="8213000" />
       <workItem from="1679612721826" duration="596000" />
       <workItem from="1680600757108" duration="9446000" />
+      <workItem from="1682479189618" duration="264000" />
+      <workItem from="1682479459367" duration="177000" />
+      <workItem from="1682479643208" duration="3241000" />
     </task>
     <servers />
   </component>
@@ -96,13 +102,28 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="upstream/main" />
+                        <option value="upstream/Tj" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="upstream/Tj" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
