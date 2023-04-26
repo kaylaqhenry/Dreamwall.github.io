@@ -55,9 +55,9 @@ function buildGallery(wordList){
     }
     return gallery;
 }
-
-var words = [love, graduation, faith, adventure,money,fitness];
+var words = [];
 function showImage(){
+    words = buildList();
     dreamWords = buildGallery(words);
     
     //column 1
@@ -84,23 +84,72 @@ function showImage(){
     document.getElementById("PlaceHolder_15").src = dreamWords[14];
     document.getElementById("PlaceHolder_16").src = dreamWords[15];
 }
-// list selector
-let list =["","", "", "", ""];
-var t =0;
+let selectedWords = [];
 function show(){
-    let items = document.forms[0].dreamword;
-    let div1_html ="";
-    for(let i = 0;i < items.length;i++){
-        if(items[i].checked)
-            list[t]= items[i];
-        t++;
-        div1_html += items[i].value + "\n";
+    let str = "<ul>";
+
+    let item = document.forms[0].dreamword;
+
+
+    for(let i = 0;i < item.length;i++){
+
+        if(item[i].checked) {
+            console.log(item[i].checked);
+            console.log(selectedWords.length)
+            selectedWords[i] = item[i].value;
+            str += "<li>" + item[i].value + "</li>";
+
+        }
     }
-    document.getElementById("div1").innerText = div1_html;
+    str += "</ul>";
+
+    console.log(selectedWords);
+    document.getElementById("div1").innerHTML = str;
+    localStorage.setItem('selectedWords', selectedWords);
+
 }
+
 function uncheckAll() {
     document.querySelectorAll('input[type="checkbox"]')
         .forEach(el => el.checked = false);
+    document.getElementById('div1').innerHTML = ' ';
+
+    document.querySelector('button').addEventListener('click', uncheckAll)
+    document.getElementById("div1").innerHTML = " ";
 }
 
-document.querySelector('button').addEventListener('click', uncheckAll)
+function buildList(){
+    let selectedWords = localStorage.getItem("selectedWords");
+    if(selectedWords.includes("Love")) {
+        words.push(love);
+    }
+    if(selectedWords.includes("Travel")) {
+        words.push(travel);
+    }
+    if (selectedWords.includes("Graduation")){
+        words.push(graduation);
+    }
+    if(selectedWords.includes("Fitness")) {
+        words.push(fitness);
+    }
+    if (selectedWords.includes("Faith")){
+        words.push(faith);
+    }
+    if (selectedWords.includes("House")){
+        words.push(house);
+    }
+    if (selectedWords.includes("Money")){
+        words.push(money);
+    }
+    if (selectedWords.includes("Business")){
+        words.push(business);
+    }
+    if (selectedWords.includes("Self Care")){
+        words.push(selfCare);
+    }
+    if (selectedWords.includes("Adventure")){
+        words.push(adventure);
+    }
+    localStorage.removeItem('selectedWords')
+    return words;
+}
