@@ -11,21 +11,21 @@
 <body style ="background: aquamarine">
 Click your desired dream words:<br>
 <form name = "form1">
-    <input type = "checkbox" name = "dreamword" value ="Love "> Love <br>
-    <input type = "checkbox" name = "dreamword" value ="Travel "> Travel<br>
-    <input type = "checkbox" name = "dreamword" value ="Friendship "> Friendship<br>
-    <input type = "checkbox" name = "dreamword" value ="Graduation ">Graduation <br>
-    <input type = "checkbox" name = "dreamword" value ="Fitness ">Fitness <br>
-    <input type = "checkbox" name = "dreamword" value ="Faith ">Faith <br>
-    <input type = "checkbox" name = "dreamword" value ="House ">House <br>
-    <input type = "checkbox" name = "dreamword" value ="Money ">Money <br>
-    <input type = "checkbox" name = "dreamword" value ="Business ">Business <br>
-    <input type = "checkbox" name = "dreamword" value ="Self Care ">Self Care <br>
-    <input type = "checkbox" name = "dreamword" value ="Adventure ">Adventure <br>
+    <input type = "checkbox" name = "dreamword" value ="Love"> Love <br>
+    <input type = "checkbox" name = "dreamword" value ="Travel"> Travel<br>
+    <input type = "checkbox" name = "dreamword" value ="Friendship"> Friendship<br>
+    <input type = "checkbox" name = "dreamword" value ="Graduation">Graduation <br>
+    <input type = "checkbox" name = "dreamword" value ="Fitness">Fitness <br>
+    <input type = "checkbox" name = "dreamword" value ="Faith">Faith <br>
+    <input type = "checkbox" name = "dreamword" value ="House">House <br>
+    <input type = "checkbox" name = "dreamword" value ="Money">Money <br>
+    <input type = "checkbox" name = "dreamword" value ="Business">Business <br>
+    <input type = "checkbox" name = "dreamword" value ="Self Care">Self Care <br>
+    <input type = "checkbox" name = "dreamword" value ="Adventure">Adventure <br>
     <input type="button" onclick="show()" value="Show List">
     <input type="button" onclick="uncheckAll()" value="Clear">
-<!--    <input type="button" onclick="submit()" value="Create Your Dream Wall">-->
 </form>
+
 <div id="div1"></div>
 <button onclick="window.location.href='collage.html';">
     Create Your Dream Wall
@@ -50,8 +50,6 @@ function show(){
             str += "<li>" + item[i].value + "</li>";
 
         }
-
-
     }
     str += "</ul>";
 
