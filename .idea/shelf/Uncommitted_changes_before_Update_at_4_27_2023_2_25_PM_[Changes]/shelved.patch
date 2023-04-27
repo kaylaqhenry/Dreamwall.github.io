@@ -1,0 +1,19 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Index</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n    <div3>\r\n    <style >\r\n        body {\r\n            background-image: url(\"/dream.jpg\");\r\n            background-repeat: no-repeat;\r\n            background-position: center;\r\n            background-size: cover;\r\n        }\r\n    </style>\r\n    </div3>\r\n</head>\r\n<div1>\r\n    <b>\r\n\r\n        DreamWall\r\n    </b>\r\n</div1>\r\n\r\n<body >\r\n\r\n<img src =\"DreamWallLogoTransSmall.png\" width=\"400\" height=\"300\" alt=\"\"/>\r\n<div class=\"container1\" >\r\n\r\n<p>\r\n    <b>\r\nWelcome! DreamWall is a reimagined process on a semi-old idea. Vision boards are used to motivate people and are a source of daily encouragement, it boost moods, promotes emotional health, and lowers depression. DreamWall will make motivation and daily encouragement easy, less messy\r\n    and personalized. Users will be able to pick as many characteristics or \"dream\" words.  You can download your dreamwall or refresh to get a new one and you can upload pictures you want in the board.\r\n    </b>\r\n</p>\r\n    <button onclick=\"window.location.href='process.html';\">\r\n       Let's get started!\r\n</button>\r\n\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision efa05174bd2c35e571b21dabe2edafb3ee896de0)
++++ b/index.html	(date 1682619855470)
+@@ -10,7 +10,7 @@
+             background-image: url("/dream.jpg");
+             background-repeat: no-repeat;
+             background-position: center;
+-            background-size: cover;
++            background-size: 200px;
+         }
+     </style>
+     </div3>
