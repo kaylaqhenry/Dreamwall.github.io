@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="Update front page without dog">
-      <change afterPath="$PROJECT_DIR$/Talking Dog.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="Fully Update front page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +88,7 @@
       <workItem from="1682479643208" duration="3241000" />
       <workItem from="1682536632374" duration="2577000" />
       <workItem from="1682620803663" duration="1676000" />
-      <workItem from="1682623995221" duration="1390000" />
+      <workItem from="1682623995221" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="Update front page without dog">
       <created>1682623511828</created>
@@ -102,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682623511828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fully Update front page">
+      <created>1682626370498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682626370498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update front page without dog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update front page without dog" />
+    <MESSAGE value="Fully Update front page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully Update front page" />
   </component>
 </project>
