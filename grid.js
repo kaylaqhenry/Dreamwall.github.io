@@ -13,7 +13,6 @@ function four() {
     }
 }
 
-var my = ["sample_pics/bunny.png"];
 var dreamWords = new Array(12);
 let adventure = ["Adventure/banshy_ Plainfield, Massachusetts by Kyle Finn Dempsey.jpeg","Adventure/fab71170-c986-4daa-a09e-9b1939f01807.jpeg","Adventure/fe1bd01f-66fd-4018-a02c-e6a2d1ef3479.jpeg", "Adventure/5a7e751629195ce22bd226f1a7654884.jpg", "Adventure/8bb07528f5c9244a2b7603cfd77fa69f.jpg", "Adventure/169e4ed9157e9f830f32c1b802ab9d79.jpg", "Adventure/8654a8fb8339bc0a6b860c709244fc3d.jpg", "Adventure/a48108abdb75ca7ef875705ad4f85e3e.jpg", "Adventure/bb106508c07abc8c698a6d883d97a7bf.jpg", "Adventure/bfb149d48d254498057eba50d7cab9e9.jpg", "Adventure/c977ae2468b0de16fa5a3d16fe6eb4f7.jpg", "Adventure/ce401315e5ccc2bd974fb8649d6078c2.jpg"];
 let business = ["Business/CEO Aesthetic.jpeg","Business/The 10 Hardest Things About Being An Entrepreneur - Red Soles and Red Wine.jpeg","Business/𝐍𝐚𝐞𝐞 𝐋𝐢.jpeg", "Business/8b660d6b5682dd73b31d2cad02dcccce.jpg", "Business/6124fe77f3657023bc3d8314b07b1e7e.jpg", "Business/a3f6d8f970f4ca1be9112ffa9d40cf68.jpg", "Business/bd64dc2d1f990350891717aa114077c2.jpg", "Business/c1fb177ceaa66ef8762cbdf45a4b7c45.jpg", "Business/dbeae2b20d6a01dd1fd9dc0c432a1a1c.jpg", "Business/f1ba4dcce0268327ee57b9f44aa46c99.jpg", "Business/how to survive law school and a job.jpeg"];
@@ -84,6 +83,8 @@ function showImage(){
     document.getElementById("PlaceHolder_15").src = dreamWords[14];
     document.getElementById("PlaceHolder_16").src = dreamWords[15];
 }
+
+//list selector
 let selectedWords = [];
 function show(){
     let str = "<ul>";
@@ -105,7 +106,7 @@ function show(){
 
     console.log(selectedWords);
     document.getElementById("div1").innerHTML = str;
-    localStorage.setItem('selectedWords', selectedWords);
+    sessionStorage.setItem('selectedWords', selectedWords);
 
 }
 
@@ -119,7 +120,7 @@ function uncheckAll() {
 }
 
 function buildList(){
-    let selectedWords = localStorage.getItem("selectedWords");
+    let selectedWords = sessionStorage.getItem("selectedWords");
     if(selectedWords.includes("Love")) {
         words.push(love);
     }
@@ -150,6 +151,6 @@ function buildList(){
     if (selectedWords.includes("Adventure")){
         words.push(adventure);
     }
-    localStorage.removeItem('selectedWords')
+    sessionStorage.removeItem('selectedWords')
     return words;
 }
