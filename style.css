@@ -25,3 +25,9 @@ div5{
     bottom: 0px;
 
 }
+div6{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
