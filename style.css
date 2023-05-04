@@ -7,6 +7,7 @@
     margin-right: auto;
     height: 150px;
     width: 50%;
+    background-position: center;
 }
 div1{
     font-family: Arial, serif;
@@ -17,4 +18,18 @@ div1{
 }
 div3{
     background-size: 300px 100px;
+}
+div5{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+div6{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align:center;
+    background-position: center;
 }
