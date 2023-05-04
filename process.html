@@ -3,14 +3,22 @@
 <head>
     <title>Selection</title>
     <link rel="stylesheet" href="input.css">
+    <script src="grid.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
     <meta charset="utf-8">
 </head>
 <h1 style = "text-align: center">
     Choose your desired "Dream" words
+<h1 style = "text-align: center; font-family: 'Merienda'; font-weight: bolder; color: black; padding-top: 50px;">
+    Choose Your Dream Words
 </h1>
 <body style ="background: aquamarine">
 Click your desired dream words:<br>
+<p style = "text-align: center; font-family: 'Merienda'; color: black; font-size: 12pt; padding-bottom: 0;"> Min. of 2 words</p>
+<body>
 <form name = "form1">
+<<<<<<< Updated upstream
     <input type = "checkbox" name = "dreamword" value ="Love"> Love <br>
     <input type = "checkbox" name = "dreamword" value ="Travel"> Travel<br>
     <input type = "checkbox" name = "dreamword" value ="Friendship"> Friendship<br>
@@ -29,4 +37,29 @@ Click your desired dream words:<br>
 <button onclick="window.location.href='collage.html';">
 Generate My Dream Wall!
 </button>
-<div id="div1"></div>
+<div id="div1"></div><div id="div1"></div>
+=======
+    <div class="grid-container">
+        <input type = "checkbox" id="loveButton" hidden class="cb-btn" name = "dreamword" value ="Love"><label class="button" for="loveButton">Love</label>
+        <input type = "checkbox" id="travelButton" hidden class="cb-btn" name = "dreamword" value ="Travel"><label class="button" for="travelButton">Travel</label>
+        <input type = "checkbox" id="friendshipButton" hidden class="cb-btn" name = "dreamword" value ="Friendship"><label class="button" for="friendshipButton">Friendship</label>
+        <input type = "checkbox" id="graduationButton" hidden class="cb-btn" name = "dreamword" value ="Graduation"><label class="button" for="graduationButton">Graduation</label>
+        <input type = "checkbox" id="fitnessButton" hidden class="cb-btn" name = "dreamword" value ="Fitness"><label class="button" for="fitnessButton">Fitness</label>
+        <input type = "checkbox" id="faithButton" hidden class="cb-btn" name = "dreamword" value ="Faith"><label class="button" for="faithButton">Faith</label>
+        <input type = "checkbox" id="houseButton" hidden class="cb-btn" name = "dreamword" value ="House"><label class="button" for="houseButton">House</label>
+        <input type = "checkbox" id="moneyButton" hidden class="cb-btn" name = "dreamword" value ="Money"><label class="button" for="moneyButton">Money</label>
+        <input type = "checkbox" id="businessButton" hidden class="cb-btn" name = "dreamword" value ="Business"><label class="button" for="businessButton">Business </label>
+    </div>
+    <div class="vertical-center">
+        <input type = "checkbox" id="selfcareButton" hidden class="cb-btn" name = "dreamword" value ="Self Care"><label class="button" for="selfcareButton">Self Care </label>
+        <input type = "checkbox" id="adventureButton" hidden class="cb-btn" name = "dreamword" value ="Adventure"><label class="button" for="adventureButton">Adventure </label>
+    </div>
+
+</form>
+<div class="vertical-center2">
+    <input class="button2" type="button" onclick="uncheckAll()" value="Clear">
+    <button class="button2" onclick="save(); window.location.href='collage.html'; buildList();"> Generate My Dream Wall! </button>
+</div>
+</body>
+</html>
+>>>>>>> Stashed changes
