@@ -2,27 +2,31 @@
     box-sizing: border-box;
 }
 
+html, body { height: 100% }
+
 body{
-    background: linear-gradient(to bottom,#15b4b4, white);
+    margin: 0;
+    background: linear-gradient(to bottom, #15b4b4, white) no-repeat;
 }
 
 header{
+    font-family: 'Merienda';
     text-align: center;
     font-weight: bold;
     font-size: 30pt;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 15px;
 }
 
 .wall{
-    padding: 50px 50px 85px 50px;
+    padding: 50px 50px 50px 50px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2px;
+    padding: 5px 2px;
     border: solid black 5px;
     background-image: url("cork.jpeg");
     width: auto;
@@ -30,10 +34,28 @@ header{
 
 .column {
     flex: 50%;
-    padding: 0 2px;
+    padding: 5px 2px;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.button{
+    font-family: 'Merienda';
+    color: black;
+    top:50%;
+    background-color:lightgrey;
+    border:none;
+    border-radius:10px;
+    min-height:50px;
+    min-width: 150px;
+    font-size: 16pt;
+}
+
+.vertical-center {
+    display: block;
+    text-align: center;
+    padding: 30px;
 }

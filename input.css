@@ -1,9 +1,74 @@
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+html, body { height: 100% }
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #15b4b4, white) no-repeat;
 }
 
-input,
-label {
-    margin: 0.4rem 0;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* minmax(300px, 1fr)*/
+    grid-gap: 50px;
+    padding: 60px;
+    justify-items: center;
+    justify-content: center;
 }
+
+.button {
+    font-family: "Merienda";
+    color: black;
+    top:50%;
+    background-color:white;
+    border:none;
+    border-radius:10px;
+    min-height:60px;
+    min-width: 150px;
+}
+
+button:hover {
+    background-color:gray;
+}
+
+button:focus {
+    background-color: gray;
+}
+
+.cb-btn:checked + label {
+    background-color: grey;
+    min-height:60px;
+    min-width: 150px;
+
+}
+label{
+    display: block;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 13pt;
+}
+
+.button2{
+    font-family: "Merienda";
+    color: black;
+    top:50%;
+    background-color:lightgrey;
+    border:none;
+    border-radius:10px;
+    min-height: 50px;
+    min-width: 150px;
+    font-size: 10pt;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 55px;
+}
+.vertical-center2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 20px;
+    padding-top: 80px;
+}
+

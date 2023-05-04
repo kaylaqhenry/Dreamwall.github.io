@@ -107,7 +107,6 @@ function show(){
     console.log(selectedWords);
     document.getElementById("div1").innerHTML = str;
     sessionStorage.setItem('selectedWords', selectedWords);
-
 }
 
 function uncheckAll() {
@@ -119,8 +118,22 @@ function uncheckAll() {
     document.getElementById("div1").innerHTML = " ";
 }
 
+function save(){
+    let item = document.forms[0].dreamword;
+    
+    for(let i = 0;i < item.length;i++){
+
+        if(item[i].checked) {
+            console.log(item[i].checked);
+            selectedWords[i] = item[i].value;
+        }
+    }
+    sessionStorage.setItem('selectedWords', selectedWords);
+}
+
 function buildList(){
     let selectedWords = sessionStorage.getItem("selectedWords");
+    console.log(selectedWords);
     if(selectedWords.includes("Love")) {
         words.push(love);
     }
@@ -151,6 +164,5 @@ function buildList(){
     if (selectedWords.includes("Adventure")){
         words.push(adventure);
     }
-    sessionStorage.removeItem('selectedWords')
     return words;
 }
