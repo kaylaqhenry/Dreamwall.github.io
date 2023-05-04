@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="Fully Update front page">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_26_2023_12_32_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_26_2023_12_32_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment=" with logo">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_27_2023_1_32_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_27_2023_1_32_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,8 @@
       <workItem from="1682620803663" duration="1676000" />
       <workItem from="1682623995221" duration="2027000" />
       <workItem from="1683039474380" duration="8000" />
-      <workItem from="1683143450415" duration="1093000" />
+      <workItem from="1683143450415" duration="1535000" />
+      <workItem from="1683231878929" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="Update front page without dog">
       <created>1682623511828</created>
@@ -118,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682626590254</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" with logo">
+      <created>1683144778267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683144778267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update front page without dog" />
     <MESSAGE value="Fully Update front page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully Update front page" />
+    <MESSAGE value=" with logo" />
+    <option name="LAST_COMMIT_MESSAGE" value=" with logo" />
   </component>
 </project>

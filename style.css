@@ -30,4 +30,6 @@ div6{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    text-align:center;
+    background-position: center;
 }
