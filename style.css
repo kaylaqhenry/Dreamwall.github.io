@@ -1,35 +1,51 @@
-.container1{
-    font-family: Arial, serif;
-    text-align:center;
-    background: white;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    width: 50%;
+html, body {
+    height: 100%;
+    font-family: 'Merienda';
+}
+
+body {
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    image-rendering: high-quality;
+    background-image:url("My project-2.png");
+    background-image:url("My project-2.png"), linear-gradient(to top, #15b4b4, white);
 }
-div1{
-    font-family: Arial, serif;
-    height: 150px;
-    width: 50%;
-    font-size: 50px;
-    text-align:left;
-}
-div3{
-    background-size: 300px 100px;
-}
-div5{
-    position: absolute;
+
+.dog{
+    position: fixed;
     right: 0px;
     bottom: 0px;
-
+    height: 300px;
+    width: auto;
 }
-div6{
+
+.logo{
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     text-align:center;
-    background-position: center;
+}
+
+.vertical-center {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    box-sizing: border-box;
+    margin: 50px;
+    font-size: 18pt;
+    text-align: center;
+}
+button{
+    font-family: 'Merienda';
+    color: black;
+    top:50%;
+    background-color:lightgrey;
+    border:none;
+    border-radius:10px;
+    min-height:50px;
+    min-width: 10px;
+    font-size: 14pt;
 }
