@@ -95,7 +95,9 @@ function uncheckAll() {
     document.querySelector('button').addEventListener('click', uncheckAll)
     document.getElementById("div1").innerHTML = " ";
 }
-
+function reset(){
+    selectedWords = [];
+}
 function save(){
     let item = document.forms[0].dreamword;
     
@@ -107,6 +109,12 @@ function save(){
         }
     }
     sessionStorage.setItem('selectedWords', selectedWords);
+    if (selectedWords.length < 2){
+        alert("Please pick a minimum of two dream words.")
+        window.location.href='process.html'
+    } else {
+        window.location.href='collage.html';
+    }
 }
 
 function buildList(){

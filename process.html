@@ -13,7 +13,7 @@
     Choose Your Dream Words
 </h1>
 <p style = "text-align: center; font-family: 'Merienda'; color: black; font-size: 12pt; padding-bottom: 0;"> Min. of 2 words</p>
-
+<body onload="reset()">
 <form name = "form1">
     <div class="grid-container">
         <input type = "checkbox" id="loveButton" hidden class="cb-btn" name = "dreamword" value ="Love"><label class="button" for="loveButton">Love</label>
@@ -34,7 +34,7 @@
 </form>
 <div class="vertical-center2">
     <input class="button2" type="button" onclick="uncheckAll()" value="Clear">
-    <button class="button2" onclick="save(); window.location.href='collage.html'; buildList();"> Generate My Dream Wall! </button>
+    <button class="button2" onclick="save(); buildList();"> Generate My Dream Wall! </button>
 </div>
 </body>
 
