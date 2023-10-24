@@ -86,28 +86,6 @@ function showImage(){
 
 //list selector
 let selectedWords = [];
-function show(){
-    let str = "<ul>";
-
-    let item = document.forms[0].dreamword;
-
-
-    for(let i = 0;i < item.length;i++){
-
-        if(item[i].checked) {
-            console.log(item[i].checked);
-            console.log(selectedWords.length)
-            selectedWords[i] = item[i].value;
-            str += "<li>" + item[i].value + "</li>";
-
-        }
-    }
-    str += "</ul>";
-
-    console.log(selectedWords);
-    document.getElementById("div1").innerHTML = str;
-    sessionStorage.setItem('selectedWords', selectedWords);
-}
 
 function uncheckAll() {
     document.querySelectorAll('input[type="checkbox"]')
@@ -117,7 +95,9 @@ function uncheckAll() {
     document.querySelector('button').addEventListener('click', uncheckAll)
     document.getElementById("div1").innerHTML = " ";
 }
-
+function reset(){
+    selectedWords = [];
+}
 function save(){
     let item = document.forms[0].dreamword;
     
@@ -129,6 +109,12 @@ function save(){
         }
     }
     sessionStorage.setItem('selectedWords', selectedWords);
+    if (selectedWords.length < 2){
+        alert("Please pick a minimum of two dream words.")
+        window.location.href='process.html'
+    } else {
+        window.location.href='collage.html';
+    }
 }
 
 function buildList(){
@@ -139,6 +125,9 @@ function buildList(){
     }
     if(selectedWords.includes("Travel")) {
         words.push(travel);
+    }
+    if (selectedWords.includes("Friendship")){
+        words.push(friendship);
     }
     if (selectedWords.includes("Graduation")){
         words.push(graduation);
@@ -164,5 +153,6 @@ function buildList(){
     if (selectedWords.includes("Adventure")){
         words.push(adventure);
     }
+    
     return words;
 }

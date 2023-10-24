@@ -16,11 +16,17 @@ header{
     font-size: 30pt;
     color: white;
     padding-top: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
 }
 
 .wall{
-    padding: 50px 50px 50px 50px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .row {

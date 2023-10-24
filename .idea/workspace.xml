@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="kayla part finished" />
+    <list default="true" id="f1a972b5-05b6-4f05-be93-ca9779c7b707" name="Changes" comment="try#1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +26,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N9QMwS40yeMytUvUGaXnLrdsYI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/badgi/OneDrive/Documents/GitHub/Dreamwall.github.io&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/toinjemaxson/Dreamwall.github.io&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -51,14 +52,14 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\badgi\OneDrive\Documents\GitHub\Dreamwall.github.io" />
-      <recent name="$USER_HOME$/Dreamwall.github.io/sample_pics" />
+      <recent name="$PROJECT_DIR$/sample_pics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$" />
-      <recent name="$USER_HOME$/Dreamwall.github.io/love" />
-      <recent name="$USER_HOME$/Dreamwall.github.io" />
-      <recent name="$USER_HOME$/Dreamwall.github.io/sample_pics" />
-      <recent name="$USER_HOME$" />
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$/love" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sample_pics" />
+      <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
   <component name="RunManager">
@@ -92,6 +93,8 @@
       <workItem from="1683039474380" duration="8000" />
       <workItem from="1683143450415" duration="1535000" />
       <workItem from="1683231878929" duration="1344000" />
+      <workItem from="1683237199697" duration="1354000" />
+      <workItem from="1683677210861" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="Update front page without dog">
       <created>1682623511828</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683233273281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="try#1">
+      <created>1683238300846</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683238300846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +187,7 @@
     <MESSAGE value="Fully Update front page" />
     <MESSAGE value=" with logo" />
     <MESSAGE value="kayla part finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="kayla part finished" />
+    <MESSAGE value="try#1" />
+    <option name="LAST_COMMIT_MESSAGE" value="try#1" />
   </component>
 </project>
